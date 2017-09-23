@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JaneDoette</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="row pt-3">
+      <div class="col-md-6">
+        <img src="images/logo.png" class="img-logo" alt="Udacity logo">
+      </div>
+      <div class="col-md-6 text-right text-uppercase">
+        <h1 class="text-thin text-muted">Jane Doette</h1>
+        <h4>Front-End-Ninja</h4>
+      </div>
+    </header>
+
+    <div  class="row">
+      <div class="col-md-12">
+        <hr class="thickHR">
+      </div>
+    </div>
+
+    <main class="row pb-4">
+      <div class="col-md-12">
+        <img sizes="100vw" srcset="images/Main_low.jpg 300w, images/Main_middle.jpg 800w, images/Main_high.jpg 1500w" src="images/Main_middle.jpg" alt="Colorful spicery" data-toggle="modal" data-target="#MainImage">
+      </div>
+    </main>
+
+    <section class="row">
+      <div class="col-md-12">
+        <h3 class="text-muted">Featured Work</h3>
+      </div>
+    </section>
+
+    <section class="row text-center text-uppercase">
+      <!--Featured work: Appify-->
+      <div class="col-md-4">
+        <img sizes="30vw" srcset="images/Appify_low.jpg 300w, images/Appify_middle.jpg 768w, images/Appify_high.jpg 1024w" src="images/Appify_middle.jpg" class="img-responsive pb-2" alt="Sunset at the beach" data-toggle="modal" data-target="#AppifyImage">
+        <h2>Appify</h2>
+        <!--The links from the design mockup didn't work, so I exchanged them with google maps links where the pictures were taken-->
+        <a href="https://goo.gl/maps/1LgbQC6th4x">https//github.com/udacity/Appify/</a>
+      </div>
+
+      <!--Featured work: Sunflower-->
+      <div class="col-md-4">
+        <img sizes="30vw" srcset="images/Sunflower_low.jpg 300w, images/Sunflower_middle.jpg 768w, images/Sunflower_high.jpg 1024w" src="images/Sunflower_middle.jpg" class="img-responsive pb-2" alt="Beautiful sunflower" data-toggle="modal" data-target="#SunflowerImage">
+        <h2>Sunflower</h2>
+        <a href="https://goo.gl/maps/jF2agRP2Buz">https//github.com/udacity/Appify/</a>
+      </div>
+
+      <!--Featured work: Bokeh-->
+      <div class="col-md-4">
+        <img sizes="30vw" srcset="images/Bokeh_low.jpg 300w, images/Bokeh_middle.jpg 768w, images/Bokeh_high.jpg 1024w" src="images/Bokeh_low.jpg" class="img-responsive pb-2" alt="Beautiful flower surrounded by soft bokeh" data-toggle="modal" data-target="#BokehImage">
+        <h2>Bokeh</h2>
+        <a class="text-muted" href="https://goo.gl/maps/kv48Q7nHUXS2">https//github.com/udacity/Appify/</a>
+      </div>
+    </section>
+
+    <footer class="pt-5 text-center">
+      <a href="http://www.facebook.com" style="font-size:24px" class="fa fb-font">&#xf09a;</a> facebook <a href="http://www.twitter.com" style="font-size:24px" class="fa twitter-font">&#xf099;</a> Twitter <a href="http://www.googleplus.com" style="font-size:24px" class="fa googleplus-font">&#xf2b3;</a> Googleplus
+    </footer>
+
+    <!-- Loading scripts for modal -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- Modal MainImage-->
+    <div class="modal fade" id="MainImage" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog  my-modal-shadow">
+        <div class="modal-content">
+          <div class="mt-4">
+            <h3 class="text-center">Colorful spices on a market</h3>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/Main_high.jpg" alt="Colorful spicery">
+            <p class="mt-2">Kathmandu, Nepal <br>Sony A7r with SEL50F1.8 (ISO100, 50mm, F2.8, 1/1000s)</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Appify-->
+    <div class="modal fade" id="AppifyImage" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog my-modal-shadow">
+        <div class="modal-content">
+          <div class="mt-4">
+            <h3 class="text-center">Beautiful sunset at the beach</h3>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/Appify_high.jpg" alt="Sunset at the beach">
+            <p class="mt-2">Cayo Santa Maria, Cuba <br>Sony A7r with SEL1635F4.0 (ISO100, 17mm, F7.1, 1/200s)</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Sunflower-->
+    <div class="modal fade" id="SunflowerImage" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog my-modal-shadow">
+        <div class="modal-content">
+          <div class="mt-4">
+            <h3 class="text-center">Sunflower field</h3>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/Sunflower_high.jpg" alt="Beautiful sunflower">
+            <p class="mt-2">East coast of Tawain <br>Sony A7r with SEL70200F4.0 (ISO100, 200mm, F4.0, 1/160s)</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Bokeh-->
+    <div class="modal fade" id="BokehImage" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog my-modal-shadow">
+        <div class="modal-content">
+          <div class="mt-4">
+            <h3 class="text-center">Exotic flower sourrounded by bokeh</h3>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/Bokeh_high.jpg" alt="Beautiful flower surrounded by soft bokeh">
+            <p class="mt-2">Fullmoon Lake, Taiwan <br>Sony A7r with SEL70200F4.0 from (ISO100, 200mm, F4.0, 1/80s)</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
